@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cofeeshop.mainFormController">
+   <children>
+      <BorderPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0" styleClass="papol" stylesheets="@coffee.css">
+         <left>
+            <AnchorPane prefHeight="600.0" prefWidth="260.0" styleClass="papoli" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="168.0" prefWidth="260.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="135.0" fitWidth="257.0" layoutX="-2.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@aa.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="inventory_btn" layoutX="12.0" layoutY="411.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="70.0" prefWidth="235.0" styleClass="dash1" stylesheets="@texts.css" text="Inventory" textAlignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Bold" size="17.0" />
+                     </font></Button>
+                  <Button fx:id="menu_btn" layoutX="11.0" layoutY="321.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="70.0" prefWidth="235.0" styleClass="dash1" text="Menu" textAlignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Bold" size="17.0" />
+                     </font></Button>
+                  <Button fx:id="customers_btn" layoutX="12.0" layoutY="500.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="70.0" prefWidth="235.0" styleClass="dash1" text="Sales History" textAlignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Bold" size="17.0" />
+                     </font></Button>
+                  <Button fx:id="logout_btn" layoutX="14.0" layoutY="595.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0" prefWidth="235.0" styleClass="dash1" stylesheets="@texts.css" text="SIGNOUT">
+                     <font>
+                        <Font name="SansSerif Bold" size="11.0" />
+                     </font></Button>
+                  <Label layoutX="14.0" layoutY="183.0" prefHeight="29.0" prefWidth="91.0" text="Welcome," textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username" layoutX="91.0" layoutY="184.0" prefHeight="20.0" prefWidth="121.0" text="Papol" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="dashboard_btn" layoutX="12.0" layoutY="230.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="70.0" prefWidth="235.0" styleClass="dash1" stylesheets="@coffee.css" text="Dashboard" textAlignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Bold" size="17.0" />
+                     </font></Button>
+                  <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="48.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@refresh.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="48.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@warehouse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="47.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@menu.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="23.0" layoutX="48.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@speedometer.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="20.0" layoutX="49.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0">
+                     <image>
+                        <Image url="@logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <stylesheets>
+                  <URL value="@mainFormDesign.css" />
+                  <URL value="@coffee.css" />
+               </stylesheets>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="600.0" prefWidth="1053.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="dashboard_form" layoutX="-2.6666666666666665" prefHeight="600.0" prefWidth="880.0" styleClass="D" stylesheets="@coffee.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-31.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="10.0" layoutY="212.0" prefHeight="600.0" prefWidth="880.0" styleClass="samples" stylesheets="@coffee.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="80.0" layoutY="315.0" prefHeight="250.0" prefWidth="300.0" styleClass="dash2" stylesheets="@coffee.css" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="600.0">
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="177.0" text="Total Sales" textFill="WHITE" AnchorPane.bottomAnchor="37.66666666666666">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dashboard_TotalI" layoutX="196.0" layoutY="19.0" text="0" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="153.0" fitWidth="148.0" layoutX="3.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="3.0">
+                                       <image>
+                                          <Image url="@philippine-peso%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink fx:id="showtotalsale1" layoutX="25.0" layoutY="207.0" onAction="#showTotalSales" text="See full Details" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="505.0" layoutY="315.0" prefHeight="250.0" prefWidth="300.0" styleClass="dash2" stylesheets="@coffee.css" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="100.0">
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="177.0" text="Total Product Sold" textFill="WHITE" AnchorPane.bottomAnchor="37.66666666666666">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dashboard_NSP" layoutX="250.0" layoutY="25.0" text="0" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="159.0" fitWidth="153.0" layoutX="25.333333333333332" layoutY="16.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0">
+                                       <image>
+                                          <Image url="@products.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink fx:id="showproductSold" layoutX="26.0" layoutY="205.0" onAction="#displayProductsSold" text="See full Details" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane focusTraversable="true" layoutX="100.0" layoutY="35.0" prefHeight="250.0" prefWidth="300.0" styleClass="dash2" stylesheets="@coffee.css" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="35.0">
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="160.0" stylesheets="@texts.css" text="Number of Customers" textFill="WHITE" AnchorPane.bottomAnchor="50.00000000000001">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dashboard_NC" layoutX="130.0" layoutY="19.0" text="0" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="157.0" fitWidth="128.0" layoutX="25.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.333333333333332">
+                                       <image>
+                                          <Image url="@people.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink fx:id="totalcustomer" layoutX="23.0" layoutY="194.0" onAction="#showTotalCustomers" text="See full Details" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="505.0" layoutY="35.0" prefHeight="250.0" prefWidth="300.0" styleClass="dash2" stylesheets="@coffee.css" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="35.0">
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="160.0" prefHeight="53.0" prefWidth="230.0" styleClass="a" text="Today's Sales" textFill="WHITE" AnchorPane.bottomAnchor="50.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="dashboard_TI" layoutX="250.0" layoutY="25.0" text="0" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="127.0" fitWidth="129.0" layoutX="25.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.333333333333332">
+                                       <image>
+                                          <Image url="@philippine-peso.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Hyperlink fx:id="totalcustomer1" layoutX="30.0" layoutY="190.0" onAction="#displayTodaysProductsSold" text="See full Details" />
+                                 </children>
+                              </AnchorPane>
+                              <Separator layoutX="440.0" layoutY="1.0" orientation="VERTICAL" prefHeight="100.0" prefWidth="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="0.0" />
+                              <Separator layoutY="298.0" minHeight="1.0" prefWidth="100.0" AnchorPane.bottomAnchor="298.6666666666667" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="298.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="inventory_form" prefHeight="600.0" prefWidth="900.0" styleClass="samples" stylesheets="@coffee.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="303.0" prefWidth="873.0" styleClass="samples1" stylesheets="@coffee.css" AnchorPane.leftAnchor="13.333333333333258" AnchorPane.rightAnchor="13.666666666666629">
+                           <children>
+                              <TableView fx:id="inventory_tableView" layoutX="13.0" layoutY="13.0" onMouseClicked="#inventorySelectData" prefHeight="277.0" prefWidth="847.0" styleClass="table-row-cell" stylesheets="@styles.css" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="12.666666666666515" AnchorPane.topAnchor="12.666666666666686">
+                                <columns>
+                                  <TableColumn fx:id="inventory_col_productID" prefWidth="80.66672992706299" resizable="false" text="Product ID" />
+                                  <TableColumn fx:id="inventory_col_productName" prefWidth="102.66663360595703" text="Product Name" />
+                                    <TableColumn fx:id="inventory_col_type" prefWidth="102.66663360595703" resizable="false" text="Type" />
+                                    <TableColumn fx:id="inventory_col_stock" prefWidth="102.66663360595703" resizable="false" text="Stock" />
+                                    <TableColumn fx:id="inventory_col_price" prefWidth="102.66663360595703" resizable="false" text="Price(₱)" />
+                                    <TableColumn fx:id="inventory_col_status" prefWidth="102.66663360595703" text="Status" />
+                                    <TableColumn fx:id="inventory_col_date" prefWidth="102.66663360595703" text="Date" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="14.0" layoutY="330.0" prefHeight="259.0" prefWidth="873.0" styleClass="dash2" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="12.666666666666629" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.666666666666742" AnchorPane.topAnchor="330.0">
+                           <children>
+                              <Label layoutX="43.0" layoutY="43.0" text="Product ID:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="inventory_productID" layoutX="143.0" layoutY="35.0" prefHeight="25.0" prefWidth="169.0" styleClass="text-field" stylesheets="@coffee.css" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="615.6666666666667" />
+                              <Label layoutX="26.0" layoutY="109.0" prefHeight="21.0" prefWidth="113.0" text="Product Name:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="inventory_productName" layoutX="143.0" layoutY="101.0" prefHeight="11.0" prefWidth="157.0" styleClass="text-field" stylesheets="@coffee.css" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="616.0" />
+                              <Label layoutX="440.0" layoutY="159.0" text="Type:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <ComboBox fx:id="inventory_type" layoutX="487.0" layoutY="157.0" prefHeight="25.0" prefWidth="160.0" promptText="Choose Type..." AnchorPane.leftAnchor="487.0" AnchorPane.rightAnchor="273.0" />
+                              <Label layoutX="418.0" layoutY="43.0" text="Stock:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="inventory_stock" layoutX="487.0" layoutY="35.0" prefHeight="25.0" prefWidth="160.0" promptText="0" styleClass="text-field" stylesheets="@coffee.css" AnchorPane.leftAnchor="487.0" AnchorPane.rightAnchor="272.33333333333326" />
+                              <Label layoutX="416.0" layoutY="109.0" prefHeight="21.0" prefWidth="75.0" text="Price(₱):">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <TextField fx:id="inventory_price" layoutX="487.0" layoutY="100.0" prefHeight="21.0" prefWidth="157.0" promptText="0.0" styleClass="text-field" stylesheets="@coffee.css" AnchorPane.leftAnchor="487.0" AnchorPane.rightAnchor="273.66666666666674" />
+                              <AnchorPane layoutX="728.0" layoutY="35.0" prefHeight="110.0" prefWidth="122.0" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="130.99999999999994" AnchorPane.rightAnchor="66.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <ImageView fx:id="inventory_imageView" fitHeight="108.0" fitWidth="112.0" layoutX="5.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="inventory_importBtn" layoutX="758.0" layoutY="170.33333333333337" mnemonicParsing="false" onAction="#inventoryImportBtn" prefHeight="30.0" prefWidth="102.0" styleClass="papol" stylesheets="@coffee.css" text="Upload Image" AnchorPane.bottomAnchor="88.33333333333331" AnchorPane.rightAnchor="76.0" />
+                              <Button fx:id="inventory_addBtn" layoutX="64.0" layoutY="201.0" mnemonicParsing="false" onAction="#inventoryAddBtn" prefHeight="40.0" prefWidth="119.0" styleClass="papol" stylesheets="@mainFormDesign.css" text="Add" AnchorPane.bottomAnchor="47.666666666666686" AnchorPane.rightAnchor="732.6666666666667" />
+                              <Button fx:id="inventory_updateBtn" layoutX="469.0" layoutY="200.0" mnemonicParsing="false" onAction="#inventoryUpdateBtn" prefHeight="41.0" prefWidth="115.0" styleClass="papol" stylesheets="@mainFormDesign.css" text="Change" visible="false" AnchorPane.bottomAnchor="47.33333333333334" AnchorPane.rightAnchor="331.66666666666663" />
+                              <Button fx:id="inventory_clearBtn" layoutX="342.0" layoutY="201.0" mnemonicParsing="false" onAction="#inventoryClearBtn" prefHeight="40.0" prefWidth="111.0" styleClass="papol" stylesheets="@mainFormDesign.css" text="Clear Form" visible="false" AnchorPane.bottomAnchor="47.666666666666686" AnchorPane.rightAnchor="462.6666666666667" />
+                              <Button fx:id="inventory_deleteBtn" layoutX="202.0" layoutY="200.0" mnemonicParsing="false" onAction="#inventoryDeleteBtn" prefHeight="41.0" prefWidth="116.0" styleClass="papol" stylesheets="@mainFormDesign.css" text="Remove" visible="false" AnchorPane.bottomAnchor="47.33333333333334" AnchorPane.rightAnchor="596.0" />
+                              <Label layoutX="74.0" layoutY="159.0" prefHeight="21.0" prefWidth="50.0" text="Status:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <ComboBox fx:id="inventory_status" layoutX="143.0" layoutY="157.0" prefHeight="25.0" prefWidth="160.0" promptText="Choose Status..." AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="615.6666666666667" />
+                              <Button fx:id="inventory_otherBtn" layoutX="202.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleShowButtons" prefHeight="40.0" prefWidth="119.0" styleClass="papol" stylesheets="@mainFormDesign.css" text="Others" AnchorPane.bottomAnchor="47.33333333333335" AnchorPane.rightAnchor="596.0" />
+                           </children>
+                        </AnchorPane>
+                        <Separator layoutX="14.0" layoutY="328.0" prefHeight="3.0" prefWidth="871.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.666666666666629" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="menu_form" layoutX="14.0" layoutY="14.0" prefHeight="600.0" prefWidth="900.0" styleClass="test" stylesheets="@coffee.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="573.0" prefWidth="558.0" stylesheets="@coffee.css" AnchorPane.bottomAnchor="13.666666666666742" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="328.0" AnchorPane.topAnchor="13.0">
+                           <children>
+                              <ScrollPane fx:id="menu_scrollPane" layoutX="13.0" layoutY="12.0" prefHeight="549.0" prefWidth="532.0" stylesheets="@coffee.css" AnchorPane.bottomAnchor="11.999999999999886" AnchorPane.leftAnchor="12.666666666666629" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="12.0">
+                                 <content>
+                                    <GridPane fx:id="menu_gridPane" prefHeight="13.0" prefWidth="89.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                    </GridPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="586.0" layoutY="13.0" prefHeight="573.0" prefWidth="300.0" styleClass="papoli" stylesheets="@coffee.css" AnchorPane.bottomAnchor="13.666666666666629" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="13.333333333333258">
+                           <children>
+                              <TableView fx:id="menu_tableView" layoutX="14.0" layoutY="14.0" onMouseClicked="#menuSelectOrder" prefHeight="235.0" prefWidth="273.0" styleClass="papoli" stylesheets="@styles.css" AnchorPane.bottomAnchor="323.9999999999999" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="12.666666666666686" AnchorPane.topAnchor="13.999999999999915">
+                                <columns>
+                                  <TableColumn fx:id="menu_col_productName" prefWidth="106.66668701171875" text="Product Name" />
+                                  <TableColumn fx:id="menu_col_quantity" text="Quantity" />
+                                    <TableColumn fx:id="menu_col_price" prefWidth="85.33331298828125" text="Price(₱)" />
+                                </columns>
+                              </TableView>
+                              <Label layoutX="51.0" layoutY="317.0" text="Total:" AnchorPane.bottomAnchor="236.33333333333331" AnchorPane.rightAnchor="212.33333333333334">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="menu_total" layoutX="134.0" layoutY="328.0" prefHeight="29.0" prefWidth="124.0" styleClass="bg" stylesheets="@coffee.css" text="0.0" AnchorPane.bottomAnchor="234.66666666666657" AnchorPane.rightAnchor="42.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="31.0" layoutY="361.0" text="Amount (₱):" AnchorPane.bottomAnchor="192.33333333333331" AnchorPane.rightAnchor="189.66666666666669">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="menu_amount" layoutX="133.0" layoutY="368.0" onAction="#menuAmount" prefHeight="27.0" prefWidth="127.0" promptText="0.0" AnchorPane.bottomAnchor="185.3333333333332" AnchorPane.rightAnchor="39.666666666666686" />
+                              <Label layoutX="35.0" layoutY="407.0" text="Change(₱):" AnchorPane.bottomAnchor="146.33333333333331" AnchorPane.rightAnchor="193.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="menu_change" layoutX="134.0" layoutY="417.0" prefHeight="33.0" prefWidth="126.0" styleClass="bg" stylesheets="@coffee.css" text="0.0" AnchorPane.bottomAnchor="141.66666666666657" AnchorPane.rightAnchor="40.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="menu_payBtn" layoutX="9.0" layoutY="459.0" mnemonicParsing="false" onAction="#menuPayBtn" prefHeight="40.0" prefWidth="288.0" styleClass="papoli" stylesheets="@coffee.css" text="Process" AnchorPane.bottomAnchor="75.66666666666663" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="8.999999999999943" />
+                              <Button fx:id="menu_removeBtn" layoutX="18.666666666666664" layoutY="273.0" mnemonicParsing="false" onAction="#menuRemoveBtn" prefHeight="32.0" prefWidth="271.0" styleClass="papoli" stylesheets="@coffee.css" text="Remove Order" AnchorPane.bottomAnchor="286.0" AnchorPane.leftAnchor="17.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="customers_form" layoutX="14.0" layoutY="14.0" prefHeight="600.0" prefWidth="900.0" styleClass="samples1" stylesheets="@coffee.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="18.0" layoutY="16.0" prefHeight="567.0" prefWidth="863.0" styleClass="samples1" AnchorPane.bottomAnchor="16.66666666666663" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.66666666666663" AnchorPane.topAnchor="16.0">
+                           <children>
+                              <Label layoutX="28.0" layoutY="21.0" text="Transaction History">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="customers_tableView" layoutX="28.0" layoutY="60.0" prefHeight="493.0" prefWidth="807.0" stylesheets="@mainFormDesign.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="60.0">
+                                <columns>
+                                  <TableColumn fx:id="customers_col_customerID" prefWidth="166.0" text=" ID" />
+                                  <TableColumn fx:id="customers_col_total" prefWidth="183.99993896484375" text="Total (₱)" />
+                                    <TableColumn fx:id="customers_col_date" prefWidth="190.6666259765625" text="Date" />
+                                    <TableColumn fx:id="customers_col_cashier" prefWidth="248.66668701171875" text="Cashier" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children>
+                           <stylesheets>
+                              <URL value="@mainFormDesign.css" />
+                              <URL value="@styles.css" />
+                           </stylesheets>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

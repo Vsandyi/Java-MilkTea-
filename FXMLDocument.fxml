@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cofeeshop.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane fx:id="si_loginForm" layoutX="300.0" layoutY="2.0" prefHeight="403.0" prefWidth="300.0" styleClass="papol" stylesheets="@coffee.css">
+               <children>
+                  <Label layoutX="23.0" layoutY="71.0" prefHeight="30.0" prefWidth="141.0" styleClass="head_label" stylesheets="@coffee.css" text="Login Account">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="si_username" layoutX="27.0" layoutY="148.0" onAction="#loginBtn" prefHeight="40.0" prefWidth="242.0" promptText="Username" styleClass="text-field" stylesheets="@coffee.css" />
+                  <PasswordField fx:id="si_password" layoutX="27.0" layoutY="206.0" onAction="#loginBtn" prefHeight="40.0" prefWidth="242.0" promptText="Password" styleClass="text-field" stylesheets="@coffee.css" />
+                  <Button fx:id="si_loginBtn" layoutX="27.0" layoutY="300.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="40.0" prefWidth="242.0" styleClass="papol" stylesheets="@coffee.css" text="Login" />
+                  <Hyperlink fx:id="si_forgotPass" layoutX="25.0" layoutY="251.0" onAction="#switchForgotPass" prefHeight="24.0" prefWidth="115.0" stylesheets="@coffee.css" text="Forgot Password?" textFill="#2cbee6">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Hyperlink>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="su_signupForm" layoutY="5.0" prefHeight="400.0" prefWidth="300.0" styleClass="papol" stylesheets="@coffee.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="72.0" styleClass="head_label" stylesheets="@coffee.css" text="Register Account">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_username" layoutX="40.0" layoutY="130.0" onAction="#regBtn" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="text-field" stylesheets="@coffee.css" />
+                  <PasswordField fx:id="su_password" layoutX="40.0" layoutY="175.0" onAction="#regBtn" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="text-field" stylesheets="@coffee.css" />
+                  <Button fx:id="su_signupBtn" layoutX="40.0" layoutY="319.0" mnemonicParsing="false" onAction="#regBtn" prefHeight="35.0" prefWidth="220.0" styleClass="papol" stylesheets="@coffee.css" text="Sign Up" />
+                  <ComboBox fx:id="su_question" layoutX="40.0" layoutY="220.0" prefHeight="39.0" prefWidth="220.0" promptText="Question" styleClass="spin" stylesheets="@coffee.css" />
+                  <TextField fx:id="su_answer" layoutX="40.0" layoutY="265.0" onAction="#regBtn" prefHeight="30.0" prefWidth="220.0" promptText="Answer" styleClass="text-field" stylesheets="@coffee.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="fp_questionForm" layoutX="300.0" layoutY="5.0" onDragDetected="#backToLoginForm" prefHeight="400.0" prefWidth="300.0" styleClass="papol" stylesheets="@coffee.css" visible="false">
+               <children>
+                  <Label layoutX="36.0" layoutY="73.0" prefHeight="30.0" prefWidth="164.0" styleClass="head_label" stylesheets="@coffee.css" text="Forgot Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="fp_proceedBtn" layoutX="40.0" layoutY="279.0" mnemonicParsing="false" onAction="#proceedBtn" prefHeight="35.0" prefWidth="220.0" styleClass="papol" stylesheets="@coffee.css" text="Proceed">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="fp_question" layoutX="36.0" layoutY="174.0" prefHeight="40.0" prefWidth="220.0" promptText="Question" styleClass="spin" stylesheets="@coffee.css" />
+                  <TextField fx:id="fp_answer" layoutX="36.0" layoutY="215.0" prefHeight="30.0" prefWidth="220.0" promptText="Answer" styleClass="text-field" stylesheets="@coffee.css" />
+                  <Button fx:id="fp_back" layoutX="97.0" layoutY="352.0" mnemonicParsing="false" onAction="#backToLoginForm" prefHeight="22.0" prefWidth="97.0" styleClass="papol" stylesheets="@coffee.css" text="Back" />
+                  <TextField fx:id="fp_username" layoutX="36.0" layoutY="136.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="text-field" stylesheets="@coffee.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="np_newPassForm" layoutX="300.0" layoutY="3.0" prefHeight="405.0" prefWidth="300.0" styleClass="papol" stylesheets="@coffee.css" visible="false">
+               <children>
+                  <Label layoutX="40.0" layoutY="72.0" styleClass="head_label" stylesheets="@coffee.css" text="Forgot Password">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="np_newPassword" layoutX="40.0" layoutY="154.0" prefHeight="35.0" prefWidth="220.0" promptText="New Password" />
+                  <PasswordField fx:id="np_confirmPassword" layoutX="40.0" layoutY="204.0" prefHeight="35.0" prefWidth="220.0" promptText="Confirmation Password" />
+                  <Button fx:id="np_changePassBtn" layoutX="40.0" layoutY="269.0" mnemonicParsing="false" onAction="#changePassBtn" prefHeight="35.0" prefWidth="220.0" styleClass="papol" stylesheets="@coffee.css" text="Change Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="np_back" layoutX="101.0" layoutY="347.0" mnemonicParsing="false" onAction="#backToQuestionForm" prefHeight="22.0" prefWidth="97.0" styleClass="papol" stylesheets="@coffee.css" text="Back" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="side_form" prefHeight="405.0" prefWidth="300.0" styleClass="papol1">
+               <children>
+                  <Label fx:id="notReg" layoutX="31.0" layoutY="304.0" prefHeight="30.0" prefWidth="115.0" text="Not registered yet?">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="side_CreateBtn" layoutX="40.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchForn" prefHeight="40.0" prefWidth="220.0" styleClass="papol" stylesheets="@coffee.css" text="Create New Account">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Button fx:id="side_alreadyHave" layoutX="40.0" layoutY="330.0" mnemonicParsing="false" onAction="#switchForn" prefHeight="35.0" prefWidth="220.0" styleClass="papol" stylesheets="@coffee.css" text="Already have an Account" visible="false" />
+                  <ImageView fitHeight="202.0" fitWidth="205.0" layoutX="51.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@oncha-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="227.0" prefHeight="22.0" prefWidth="281.0" styleClass="title" stylesheets="@coffee.css" text="Ong-Cha-A Management System">
+                     <font>
+                        <Font name="525icons" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <stylesheets>
+                  <URL value="@coffee.css" />
+                  <URL value="@mainFormDesign.css" />
+                  <URL value="@try.css" />
+               </stylesheets>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</StackPane>

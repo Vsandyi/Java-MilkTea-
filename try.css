@@ -1,0 +1,64 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 13, 2024, 10:15:55 AM
+    Author     : franc
+*/
+
+/* Assuming you are applying this style to a specific node or scene */
+/* Assuming you are applying this style to a specific node or scene */
+.papola {
+  /* Background Gradient */
+  -fx-background-color: linear-gradient(to top,
+                                       #ff9a9e 0%,  /* Lighter pink (0%) */
+                                       #fd889d 30%, /* Darker pink (30%) */
+                                       #fc749b 60%, /* Even darker pink (60%) */
+                                       #fb5f99 85%, /* Deepest pink (85%) */
+                                       #fa4997 100%  /* Darkest shade (100%) */
+                                       );
+
+  /* Text Color */
+  -fx-text-fill: black;
+
+  /* Rounded Corners */
+  -fx-background-radius: 5;
+  -fx-border-radius: 5;
+
+  /* Transparent Border */
+  -fx-border-color: transparent;
+
+  /* Optional: Inner Shadow for Depth */
+}
+
+  /* Button State Styles (optional) */
+  .papola:hover {
+    /* Adjust hover effect as needed (optional) */
+  }
+
+  .papola:pressed {
+    /* Adjust pressed effect as needed (optional) */
+  }
+
+.spinner {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Text color */
+    -fx-background-color: #FFFFFF; /* Background color */
+    -fx-border-color: #CCCCCC; /* Border color */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1); /* Shadow effect */
+    -fx-focus-color: transparent; /* Remove focus ring */
+    -fx-faint-focus-color: transparent; /* Remove focus ring */
+    -fx-highlight-fill: derive(-fx-control-inner-background, 20%); /* Inner shadow effect */
+    -fx-highlight-text-fill: -fx-text-inner-color; /* Inner shadow text color */
+    -fx-inner-border: transparent; /* Inner border color */
+    -fx-selection-bar-non-focused: transparent; /* Remove selection bar */
+    -fx-selection-bar: transparent; /* Remove selection bar */
+    -fx-text-box-border: transparent; /* Remove text box border */
+    -fx-pref-height: 20px; /* Adjust height */
+}
+
+

@@ -1,0 +1,35 @@
+
+.table-row-cell:odd {
+    -fx-background-color: pink; /* Set pink background color for odd rows */
+}
+.table-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: linear-gradient(to bottom right, #0f6789, #286155);
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+}
+.table-view .column-header-background{
+    -fx-background-color: pink; /* dito */
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-background-insets: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+}
+
+.buttong {
+    -fx-background-color: linear-gradient(to right, #190A05, #870000);
+}
+
+.buttong:hover {
+    -fx-background-color: linear-gradient(to right, #870000, #190A05);
+}
+
+.buttong:pressed {
+    -fx-background-color: linear-gradient(to right, #870000, #190A05);
+}

@@ -1,0 +1,266 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 18, 2024, 3:08:36 PM
+    Author     : franc
+*/
+
+.text-field {
+    -fx-background-color: white; /* Set background color to white */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-color: #cccccc; /* Border color */
+    -fx-border-radius: 5px; /* Rounded border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-padding: 8px; /* Padding */
+    -fx-font-size: 14px; /* Font size */
+     -fx-border-heigth:10px;
+}
+
+.text-field:focused {
+    -fx-border-color: #4d90fe; /* Border color when focused */
+    -fx-border-width: 1px; /* Border width when focused */
+}
+
+.text-field:hover {
+    -fx-border-color: #999999; /* Border color on hover */
+}
+
+.text-field .text {
+    -fx-fill: #333333; /* Text color */
+}
+
+
+
+.spin {
+    -fx-progress-color: white;  /* Set progress bar color to white */
+    -fx-background-color: pink;  /* Make background transparent */
+    -fx-accent: transparent;  /* Remove default accent color */
+}
+
+.title {
+    -fx-font-family: 'Arial';
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark grey color */
+    -fx-text-alignment: center;
+    -fx-letter-spacing: 2px; /* Adds space between letters */
+}
+
+
+
+
+
+.samples {
+    -fx-background-color: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    -fx-background-raiduis:50px;
+}
+
+.dashboard{ 
+ 
+    -fx-background-color: #FF6A88; /* Choosing a color from the middle of the gradient */
+    -fx-text-fill: white; /* Ensuring text visibility */
+}
+
+
+.dash1 {
+    -fx-background-color: linear-gradient(to right, #FF7878 0%, #FFA8A8 50%, #FF7878 100%);
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+}
+
+.dash1:hover {
+    -fx-background-color: linear-gradient(to right, #FFA8A8 0%, #FF7878 50%, #FFA8A8 100%);
+}
+
+.dash1:pressed {
+    -fx-background-color: linear-gradient(to right, #FFA8A8 0%, #FF7878 50%, #FFA8A8 100%);
+}
+
+.dash2{
+     -fx-background-color: linear-gradient(to right, #FF7878 0%, #FFA8A8 50%, #FF7878 100%);
+    -fx-background-radius: 10px;  
+}
+
+
+
+.button1 {
+    -fx-background-color: #E8348E; /* Light gray button background */
+    -fx-text-fill: white; /* Black text color */
+    -fx-font-size: large;
+    -fx-padding: 0 0 0 8px ; /* Padding */
+    -fx-background-radius: 5; /* Rounded corners */
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+
+}
+#myTableView {
+    -fx-background-color: linear-gradient(to right, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    -fx-text-fill: white;
+}
+
+.button1:hover {
+    -fx-background-color: #B81868; /* Slightly darker gray on hover */
+}
+
+
+.bg{
+    -fx-background-color: linear-gradient(to top, #f8f8f8 0%, #ffffff 50%, #f8f8f8 100%);
+}
+.test{
+    -fx-background-color: linear-gradient(to right, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+.testB{
+    -fx-background-color: linear-gradient(to right, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); -fx-text-fill: white;
+}
+.testing{
+ -fx-background-color: linear-gradient(to right, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); -fx-text-fill: white;
+
+}
+.navi{   
+-fx-background-color: linear-gradient(to bottom, #fecfef 0%, #ff9a9e 100%);
+   -fx-text-fill: white;
+}
+
+
+.papol1 {
+    -fx-background-color: linear-gradient(to top, #ff9a9e 0%, #ffc0cb 35%, #fecfef 65%, #ffffff 100%);
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Rounded corners */
+    -fx-border-radius: 5; /* Border radius */
+    -fx-border-color: transparent; /* Transparent border */
+    -fx-font-size: 10px; /* Font size */
+    -fx-font-family: "Segoe UI"; /* Font family */
+    -fx-font-weight: bold;
+}
+
+.papol1:hover {
+    -fx-background-color: linear-gradient(to top, #ff9a9e 0%, #ffc0cb 35%, #fecfef 65%, #ffffff 100%);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: transparent;
+    -fx-font-size: 16px; /* Font size */
+}
+
+.papol1:pressed {
+    -fx-background-color: linear-gradient(to top, #ff9a9e 0%, #ffc0cb 35%, #fecfef 65%, #ffffff 100%);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: transparent;
+    -fx-font-size: 16px; /* Font size */
+}
+
+
+
+
+
+.papol {
+    -fx-background-color: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 5; /* Rounded corners */
+    -fx-border-radius: 5; /* Border radius */
+    -fx-border-color: transparent; /* Transparent border */
+}
+
+.papol:hover {
+    -fx-background-color: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: transparent;
+}
+
+.papol:pressed {
+    -fx-background-color: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: transparent;
+}
+
+
+.papoli {
+    -fx-background-color: linear-gradient(to bottom, #ff9a9e 5%, #fecfef 95%);
+    -fx-text-fill: black; /* Text color */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-border-radius: 10; /* Border radius */
+    -fx-border-color: transparent; /* Transparent border */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 5,0,2,2 );
+}
+
+.papoli:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff9a9e 10%, #fecfef 90%);
+}
+
+.papoli:pressed {
+    -fx-background-color: linear-gradient(to bottom, #ff9a9e 10%, #fecfef 90%);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 2,0,1,1 );
+}
+
+
+
+.A{
+   -fx-background-color: #FC7EBD;
+}
+
+.B{
+    
+   -fx-background-color: #FFDDFF;
+}
+.C{
+    
+   -fx-background-color: ff69b4;
+}
+
+.D{
+    
+   -fx-background-color: #cc3366 ;
+}
+
+.gradient{
+    -fx-background-color: linear-gradient(to bottom right,#4874c7,#255735);
+}
+.head_label{
+    -fx-border-color:white;
+    -fx-border-width: 0 0 0 3px;
+    -fx-padding: 0 0 0 5px;
+}
+.hyperlink{
+    -fx-text-fill: #000000;
+}
+.hyperlink:hover{
+    -fx-text-fill: #2cbee6;
+}
+
+.login_button{
+    -fx-background-color: linear-gradient(to bottom right,#098c53,#246861);
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+}
+.login_button:hover{
+    -fx-background-color: linear-gradient(to bottom right,#0fb565,#399a8f);
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right,#4874c7,#255735);
+    -fx-border-width: .5px;
+}
+.textfield:focused{
+    -fx-border-width: 1px;
+}
+.create_btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+.create_btn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+.dboard{
+    -fx-background-radius: 10px;
+}
+

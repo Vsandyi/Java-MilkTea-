@@ -1,0 +1,29 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 11, 2024, 1:44:29 PM
+    Author     : franc
+*/
+
+.a{
+ -fx-font-family: 'Montserrat', sans-serif;
+-fx-font-weight: bold;
+-fx-font-color:black;
+}
+
+
+
+.buttoni {
+    -fx-background-color: linear-gradient(to right, #FF7E6E 10%, #FF5469 45%, #FF99AC 90%);
+}
+
+.buttoni:hover {
+    -fx-background-color: linear-gradient(to right, #FF5469 10%, #FF7E6E 45%, #FF99AC 90%);
+}
+
+.buttoni:pressed {
+    -fx-background-color: linear-gradient(to right, #FF99AC 10%, #FF7E6E 45%, #FF5469 90%);
+}
+
